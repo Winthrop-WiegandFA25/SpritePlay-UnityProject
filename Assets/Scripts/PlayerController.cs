@@ -6,14 +6,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
     public float speed = 2.0f;
-    private PlayerController controller;
+    //private PlayerController controller;
     private Rigidbody2D rb;
     private Animator anim;
     private bool facingRight;
 
     void Awake()
     {
-        controller = new PlayerController();
+        //controller = new PlayerController();
     }
 
     void Start() {
