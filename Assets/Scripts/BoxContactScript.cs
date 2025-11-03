@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class BoxContactScript : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class BoxContactScript : MonoBehaviour
             Debug.Log(part.transform.position);
             part.Play();
             contactTime = Time.time;
+
+            //GameObjectGameObject.FindGameObjectWithTag("GameDataManager");
+            GameDataManager.Instance.score++;
         }
     }
 }

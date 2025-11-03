@@ -2,13 +2,19 @@ using System;
 using System.IO.IsolatedStorage;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
     public float speed = 2.0f;
+    private PlayerController controller;
     private Rigidbody2D rb;
     private Animator anim;
     private bool facingRight;
 
+    void Awake()
+    {
+        controller = new PlayerController();
+    }
 
     void Start() {
         rb = gameObject.GetComponent<Rigidbody2D>();

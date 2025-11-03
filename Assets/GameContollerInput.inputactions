@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "name": "GameContollerInput",
+    "maps": [
+        {
+            "name": "GameControlMap",
+            "id": "f6af2c4e-1585-428d-b9d4-dd266f095d3a",
+            "actions": [
+                {
+                    "name": "MoveLeft",
+                    "type": "Button",
+                    "id": "9ac4ab4e-8f7c-48ab-8176-8ccc340587b2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MoveRight",
+                    "type": "Button",
+                    "id": "a3d468b8-7d50-4e8e-b7b1-bd999708ef11",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "JSJump",
+                    "type": "Button",
+                    "id": "67582bd2-cb9d-4163-aac8-d7a47c97dd62",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "78faebf6-a6db-46a5-928c-13dd306c85be",
+                    "path": "<Joystick>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4e6e1601-c18f-4639-9831-e6136540a2e8",
+                    "path": "<Joystick>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e7c4860-06c1-4d87-9a93-7107e64615d5",
+                    "path": "<HID::Core (Plus) Wired Controller>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JSJump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
